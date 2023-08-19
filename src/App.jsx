@@ -8,11 +8,12 @@ import {SubMainFour} from "./page/subMainFour";
 import {SubMainFive} from "./page/subMainFive";
 import {SubMainSix} from "./page/subMainSix";
 import {SubMainSeven} from "./page/subMainSeven";
-import './assets/styles/main.scss'
+import cls from './assets/styles/main.module.scss';
+
 function App() {
   return (
   <Routes>
-          <Route  path='/'  element=<Main/> />
+          <Route  path='/'  element=<Main cls={cls}/> />
           <Route  path='/mainsec'  element=<MainSec/> />
           <Route  path='/submainone'  element=<SubMainOne/> />
           <Route  path='/submaintwo'  element=<SubMainTwo/> />
