@@ -9,19 +9,20 @@ import {SubMainFive} from "./page/subMainFive";
 import {SubMainSix} from "./page/subMainSix";
 import {SubMainSeven} from "./page/subMainSeven";
 import cls from './assets/styles/main.module.scss';
+import clsSec from './assets/styles/mainSec.module.scss';
 
 function App() {
   return (
   <Routes>
           <Route  path='/'  element=<Main cls={cls}/> />
-          <Route  path='/mainsec'  element=<MainSec/> />
-          <Route  path='/submainone'  element=<SubMainOne/> />
-          <Route  path='/submaintwo'  element=<SubMainTwo/> />
-          <Route  path='/submainthree'  element=<SubMainThree/> />
-          <Route  path='/submainfour'  element=<SubMainFour/> />
-          <Route  path='/submainfive'  element=<SubMainFive/> />
-          <Route  path='/submainsix'  element=<SubMainSix/> />
-          <Route  path='/submainseven'  element=<SubMainSeven/> />
+          <Route  path='/mainsec'  element=<MainSec cls={clsSec}/> />
+          <Route  path='/submainone'  element=<SubMainOne cls={cls}/> />
+          <Route  path='/submaintwo'  element=<SubMainTwo cls={cls}/> />
+          <Route  path='/submainthree'  element=<SubMainThree cls={cls}/> />
+          <Route  path='/submainfour'  element=<SubMainFour cls={cls}/> />
+          <Route  path='/submainfive'  element=<SubMainFive cls={cls}/> />
+          <Route  path='/submainsix'  element=<SubMainSix cls={cls}/> />
+          <Route  path='/submainseven'  element=<SubMainSeven cls={cls}/> />
   </Routes>
   );
 }

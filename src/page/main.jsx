@@ -1,6 +1,6 @@
+import React from "react";
 import screenShotPost from  '../assets/img/screenShotPostFlopizer.jpg'
 import screenShotIc from  '../assets/img/icmizerScreen.jpg'
-import React from "react";
 import firstChild from '../assets/img/firstChild.jpg'
 import secChild from '../assets/img/secChild.jpg'
 export const Main = ({cls}) => {
