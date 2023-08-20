@@ -1,0 +1,17 @@
+$k:1;
+
+.tabs_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px * $k;
+  width: 550px * $k;
+  margin-left: 140px * $k;
+}
+.tab_item {
+  width: 100%;
+  color: #000;
+  font-size: 35px * $k;
+  font-weight: 500;
+  line-height: 64px * $k;
+  letter-spacing: 0.7px * $k;
+}

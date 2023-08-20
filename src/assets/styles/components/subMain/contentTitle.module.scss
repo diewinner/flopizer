@@ -1,0 +1,28 @@
+$k:1;
+
+.content_head_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px * $k;
+  width: 1145px * $k;
+  margin-top: 35px * $k;
+
+}
+
+.content_title {
+  width: 100%;
+  color: #000;
+  font-size: 30px * $k;
+  font-weight: 700;
+  line-height: 64px * $k;
+  letter-spacing: 0.6px * $k;
+}
+
+.content_subtitle {
+  width: 100%;
+  color: #000;
+  font-size: 25px * $k;
+  font-weight: 500;
+  line-height: 45px * $k;
+  letter-spacing: 0.5px * $k;
+}

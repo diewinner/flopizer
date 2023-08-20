@@ -1,0 +1,23 @@
+$k:1;
+
+.head_container {
+  display: flex;
+  flex-direction: column;
+  gap: 61px * $k;
+}
+
+.head_title {
+  color: #000;
+  font-size: 50px * $k;
+  font-weight: 700;
+  line-height: 96px * $k;
+  margin-left: 140px * $k;
+  margin-top: 58px * $k;
+}
+
+.head_line {
+  margin: 0 auto;
+  width: 1755px * $k;
+  height: 1px * $k;
+  background-color: #000;
+}
