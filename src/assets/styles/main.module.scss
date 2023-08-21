@@ -31,7 +31,7 @@ $k:1;
             color: #000;
             text-align: center;
             font-size: 64px * $k;
-            font-weight: 700 * $k;
+            font-weight: 700;
             line-height: 96px * $k;
             width: 1063px * $k;
         }
@@ -167,7 +167,6 @@ $k:1;
 }
 
 .icmizer_detail_container {
-
     margin-top: 140px * $k;
 
     &__title {

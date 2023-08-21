@@ -5,8 +5,8 @@ $k:1;
   flex-direction: column;
   gap: 20px * $k;
   width: 550px * $k;
-  padding-left: 42px;
-  padding-top: 55px;
+  padding-left: 42px * $k;
+  padding-top: 55px * $k;
 }
 .tab_item {
   width: 100%;

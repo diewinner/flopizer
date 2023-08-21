@@ -143,39 +143,39 @@ $k:1;
     margin-bottom: 180px * $k;
     img {
         position: absolute;
-        top: 85px;
+        top: 85px * $k;
         right: 0;
-        width: 345px;
-        height: 345px;
+        width: 345px * $k;
+        height: 345px * $k;
     }
 }
 
 .price_discount_star {
     position: absolute;
-    top: 65px;
-    right: 280px;
+    top: 65px * $k;
+    right: 280px * $k;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 350px;
+    width: 350px * $k;
+    height: 350px * $k;
     background-image: url("../img/Star 2.svg");
     background-repeat: no-repeat;
     color: #000;
-    font-size: 25px;
-    line-height: 40px;
-    letter-spacing: 0.5px;
+    font-size: 25px * $k;
+    line-height: 40px * $k;
+    letter-spacing: 0.5px * $k;
     span {
         width: 100%;
         text-align: center;
         color: #D42176;
         font-weight: 700;
-        font-size: 50px;
-        letter-spacing: 1px;
+        font-size: 50px * $k;
+        letter-spacing: 1px * $k;
     }
     div {
-        width: 240px;
+        width: 240px * $k;
         text-align: center;
     }
 }
@@ -196,13 +196,13 @@ $k:1;
 .price_item {
     width: 658px * $k;
     border: 5px * $k solid #A19FAA;
-    height: 855px;
+    height: 855px * $k;
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        width: 510px;
-        min-height: 600px;
+        width: 510px * $k;
+        min-height: 600px * $k;
         padding-top: 121px * $k;
         padding-left: 76px * $k;
     }
@@ -230,7 +230,7 @@ $k:1;
             color: #A19FAA;
             font-size: 25px * $k;
             line-height: 64px * $k;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.5px * $k;
         }
     }
     &__price {
