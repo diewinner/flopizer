@@ -1,4 +1,4 @@
-$k:1;
+$k:0.75;
 
 * {
     margin: 0;
@@ -14,7 +14,7 @@ $k:1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(89deg, #F3F3F3 0%, #F3F3F3 33.33%, #F3F3F3 75%, rgba(243, 243, 243, 0.00) 87.50%);
+    background: #e5e5e5;
     height: 835px * $k;
     margin: 0 auto;
     &__text {
@@ -137,23 +137,16 @@ $k:1;
 .price_container {
     display: flex;
     flex-direction: column;
-    position: relative;
     gap: 110px * $k;
     margin-top: 163px * $k;
     margin-bottom: 180px * $k;
-    img {
-        position: absolute;
-        top: 85px * $k;
-        right: 0;
-        width: 345px * $k;
-        height: 345px * $k;
-    }
+
 }
 
 .price_discount_star {
     position: absolute;
-    top: 65px * $k;
-    right: 280px * $k;
+    top: -105px * $k;
+    right: -120px * $k;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,6 +155,7 @@ $k:1;
     height: 350px * $k;
     background-image: url("../img/Star 2.svg");
     background-repeat: no-repeat;
+    background-size: cover;
     color: #000;
     font-size: 25px * $k;
     line-height: 40px * $k;
@@ -184,6 +178,9 @@ $k:1;
     display: flex;
     gap: 270px * $k;
     justify-content: center;
+    position: relative;
+    width: 1450px * $k;
+    margin:0 auto;
 }
 .price_title {
     color: #000;
@@ -203,8 +200,7 @@ $k:1;
         justify-content: flex-end;
         width: 510px * $k;
         min-height: 600px * $k;
-        padding-top: 121px * $k;
-        padding-left: 76px * $k;
+        margin: 0 auto;
     }
     &__header {
         width: 100%;
@@ -218,13 +214,16 @@ $k:1;
         font-weight: 600;
         line-height: 64px * $k;
         letter-spacing: 0.9px * $k;
+        padding-top: 121px * $k;
+        padding-left: 76px * $k;
     }
     &__list {
         width: 100%;
         list-style: none;
-        min-height: 193px;
+        min-height: 193px * $k;
         margin-bottom: 26px * $k;
         margin-top: 18px * $k;
+        padding-left: 76px * $k;
         &__item {
             width: 100%;
             color: #A19FAA;
@@ -248,7 +247,7 @@ $k:1;
     }
     &__container_btn {
         width: 100%;
-        margin-bottom: 150px * $k;
+        margin-top: 62px * $k;
     }
     &__btn {
         display: flex;
@@ -272,7 +271,7 @@ $k:1;
 .price_item__icm {
     width: 658px * $k;
     border: 5px * $k solid #D42176;
-    height: 855px;
+    height: 855px * $k;
 
     &__header {
         width: 100%;
@@ -447,9 +446,12 @@ $k:1;
 }
 
 .skills_item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 551px * $k;
     &__title {
-        width: 680px * $k;
+        width: 551px * $k;
         color: #000;
         font-size: 45px * $k;
         font-weight: 700;
@@ -457,7 +459,12 @@ $k:1;
         span {
             color: #D42176;
         }
+        &__other {
+            @extend .skills_item__title;
+            width: 681px * $k;
+        }
     }
+
     &__subtitle {
         width: 100%;
         color: #000;

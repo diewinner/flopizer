@@ -127,7 +127,7 @@ export const MainSec = ({ cls }) => {
                     <div className={cls.skills_list__flex}>
                         <div className={cls.skills_item}>
                             <div className={cls.skills_item__title}>
-                                <span>Intuitive</span> interface
+                                <span>Intuitive</span> <br/> interface
                             </div>
                             <div className={cls.skills_item__subtitle}>
                                 Learning doesn't equate to struggling. The typical Postflopizer user spends no more than 10
@@ -155,7 +155,7 @@ export const MainSec = ({ cls }) => {
                             </div>
                         </div>
                         <div className={cls.skills_item}>
-                            <div className={cls.skills_item__title}>
+                            <div className={cls.skills_item__title__other}>
                                 Working on multiple strategies <span>simultaneously</span>
                             </div>
                             <div className={cls.skills_item__subtitle}>
@@ -171,16 +171,18 @@ export const MainSec = ({ cls }) => {
             </div>
 
             <div className={cls.price_container}>
-                {Star && <div className={cls.price_discount_star}><span>-10%</span>
-                    <div>discount for the early birds</div></div>}
+
                 <div className={cls.price_title}>
                     Fair prices for fair play
                 </div>
                 <div>
                     <div className={cls.price_container_flex}>
+                        {Star && <div className={cls.price_discount_star}><span>-10%</span>
+                            <div>discount for the early birds</div></div>}
                                 <PriceBoard
                                     cls={cls}
                                     clsBtn={cls.price_item__btn}
+                                    clsBtnCont={cls.price_item__container_btn}
                                     clsLi={cls.price_item__list__item}
                                     clsBorder={cls.price_item}
                                     clsHead={cls.price_item__header}
@@ -190,9 +192,10 @@ export const MainSec = ({ cls }) => {
                                     price={contentFree.price}
                                     btn={contentFree.btn} />
                                 <PriceBoard
-
                                     cls={cls}
                                     clsBtn={cls.price_item__icm__btn}
+                                    clsBtnCont={cls.price_item__icm__container_btn}
+
                                     clsLi={cls.price_item__icm__list__item}
                                     clsBorder={cls.price_item__icm}
                                     clsHead={cls.price_item__icm__header}

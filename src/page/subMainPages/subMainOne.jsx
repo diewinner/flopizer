@@ -31,7 +31,7 @@ export const SubMainOne = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }
         <div className={cls.submain_wrapper}>
             <HeadTitle clsHead={clsHead}/>
             <div className={cls.submain_content_container}>
-                <Tabs clsTabs={clsTabs}/>
+                <Tabs  clsTabs={clsTabs}/>
                 <div className={cls.submain_content}>
                     <ContentTitle  clsContHead={clsContHead} title={title} subtitle={subtitle}/>
                         <ContentList title1={list.title1}

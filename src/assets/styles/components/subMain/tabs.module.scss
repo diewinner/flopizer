@@ -15,4 +15,9 @@ $k:1;
   font-weight: 500;
   line-height: 64px * $k;
   letter-spacing: 0.7px * $k;
+  text-decoration: none;
+  &__active {
+    @extend .tab_item;
+    font-weight:  bolder;
+  }
 }

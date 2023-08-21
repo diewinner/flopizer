@@ -18,17 +18,19 @@ import clsContFooter from './assets/styles/components/subMain/contentFooter.modu
 
 
 function App() {
-  return (
+
+    return (
   <Routes>
+
           <Route  path='/'  element=<Main cls={cls}/> />
           <Route  path='/mainsec'  element=<MainSec cls={clsSec}/> />
-          <Route  path='/submainone'  element=<SubMainOne clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
-          <Route  path='/submaintwo'  element=<SubMainTwo clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
-          <Route  path='/submainthree'  element=<SubMainThree clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
-          <Route  path='/submainfour'  element=<SubMainFour clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
-          <Route  path='/submainfive'  element=<SubMainFive clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
-          <Route  path='/submainsix'  element=<SubMainSix clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs } clsHead={clsHead} cls={clsSubMain}/> />
-          <Route  path='/submainseven'  element=<SubMainSeven clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
+          <Route  path='/submainone'  element=<SubMainOne  clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
+          <Route  path='/submaintwo'  element=<SubMainTwo  clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
+          <Route  path='/submainthree'  element=<SubMainThree  clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
+          <Route  path='/submainfour'  element=<SubMainFour  clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
+          <Route  path='/submainfive'  element=<SubMainFive  clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
+          <Route  path='/submainsix'  element=<SubMainSix  clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs } clsHead={clsHead} cls={clsSubMain}/> />
+          <Route  path='/submainseven'  element=<SubMainSeven  clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
   </Routes>
   );
 }

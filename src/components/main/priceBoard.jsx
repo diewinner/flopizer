@@ -1,6 +1,6 @@
 import React from "react";
 
-export const PriceBoard = ({cls,title,li1,li2,li3,price,priceOld,btn,info, clsBtn, clsLi, clsBorder, clsHead}) => {
+export const PriceBoard = ({cls,title,li1,li2,li3,price,priceOld,btn,info, clsBtn, clsLi, clsBorder, clsHead, clsBtnCont}) => {
   return (
       <div className={clsBorder}>
               <div className={clsHead}></div>
@@ -21,7 +21,7 @@ export const PriceBoard = ({cls,title,li1,li2,li3,price,priceOld,btn,info, clsBt
                             {info}
                         </div>
                     </div>
-                    <div className={cls.price_item__container_btn}>
+                    <div className={clsBtnCont}>
                         <button className={clsBtn}>
                             {btn}
                         </button>
