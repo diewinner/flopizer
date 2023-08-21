@@ -1,11 +1,11 @@
 import React from "react";
-import Cube from '../assets/img/Cube.jpg'
-import firstChild from "../assets/img/firstChild.jpg";
-import secChild from "../assets/img/secChild.jpg";
-import screenShot from '../assets/img/screenShotPostFlopizer.jpg'
-import {PriceBoard} from "../components/main/priceBoard";
-import Star from "../assets/img/Star 2.svg"
-import {CeoStatement} from "../components/main/ceoStatement";
+import Cube from '../../assets/img/Cube.jpg'
+import firstChild from "../../assets/img/firstChild.jpg";
+import secChild from "../../assets/img/secChild.jpg";
+import screenShot from '../../assets/img/screenShotPostFlopizer.jpg'
+import {PriceBoard} from "../../components/main/priceBoard";
+import Star from "../../assets/img/Star 2.svg"
+import {CeoStatement} from "../../components/main/ceoStatement";
 export const MainSec = ({ cls }) => {
     const contentPrice =
         {

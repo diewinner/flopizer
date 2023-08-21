@@ -1,11 +1,11 @@
-import {HeadTitle} from "../components/subMain/headTitle";
-import {Tabs} from "../components/subMain/Tabs";
-import {ContentTitle} from "../components/subMain/contentTitle";
-import {ContentFooter} from "../components/subMain/contentFooter";
-import {ContentList} from "../components/main/contentList";
-import screen1 from "../assets/img/subMain_3/subMain_3_1.jpg";
-import screen2 from "../assets/img/subMain_3/subMain_3_2.jpg";
-import screen3 from "../assets/img/subMain_3/subMain_3_3.jpg";
+import {HeadTitle} from "../../components/subMain/headTitle";
+import {Tabs} from "../../components/subMain/Tabs";
+import {ContentTitle} from "../../components/subMain/contentTitle";
+import {ContentFooter} from "../../components/subMain/contentFooter";
+import {ContentList} from "../../components/main/contentList";
+import screen1 from "../../assets/img/subMain_3/subMain_3_1.jpg";
+import screen2 from "../../assets/img/subMain_3/subMain_3_2.jpg";
+import screen3 from "../../assets/img/subMain_3/subMain_3_3.jpg";
 
 export const SubMainThree = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }) => {
     const title = 'See your strategy evolve in a real-time'

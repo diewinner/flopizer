@@ -1,9 +1,9 @@
 import React from "react";
-import screenShotPost from  '../assets/img/screenShotPostFlopizer.jpg'
-import screenShotIc from  '../assets/img/icmizerScreen.jpg'
-import firstChild from '../assets/img/firstChild.jpg'
-import secChild from '../assets/img/secChild.jpg'
-import {CeoStatement} from "../components/main/ceoStatement";
+import screenShotPost from '../../assets/img/screenShotPostFlopizer.jpg'
+import screenShotIc from '../../assets/img/icmizerScreen.jpg'
+import firstChild from '../../assets/img/firstChild.jpg'
+import secChild from '../../assets/img/secChild.jpg'
+import {CeoStatement} from "../../components/main/ceoStatement";
 export const Main = ({cls}) => {
 
     const ceo = {

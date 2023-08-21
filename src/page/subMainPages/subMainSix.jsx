@@ -1,10 +1,10 @@
-import {HeadTitle} from "../components/subMain/headTitle";
-import {Tabs} from "../components/subMain/Tabs";
-import {ContentTitle} from "../components/subMain/contentTitle";
-import {ContentFooter} from "../components/subMain/contentFooter";
-import {ContentList} from "../components/main/contentList";
-import screen1 from "../assets/img/subMain_6/subMain_6_1.jpg";
-import screen2 from "../assets/img/subMain_6/subMain_6_2.jpg";
+import {HeadTitle} from "../../components/subMain/headTitle";
+import {Tabs} from "../../components/subMain/Tabs";
+import {ContentTitle} from "../../components/subMain/contentTitle";
+import {ContentFooter} from "../../components/subMain/contentFooter";
+import {ContentList} from "../../components/main/contentList";
+import screen1 from "../../assets/img/subMain_6/subMain_6_1.jpg";
+import screen2 from "../../assets/img/subMain_6/subMain_6_2.jpg";
 
 export const SubMainSix = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }) => {
     const title = 'Revisit your insights whenever you need'

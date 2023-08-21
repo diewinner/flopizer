@@ -1,12 +1,12 @@
-import {HeadTitle} from "../components/subMain/headTitle";
-import {Tabs} from "../components/subMain/Tabs";
-import {ContentTitle} from "../components/subMain/contentTitle";
-import {ContentFooter} from "../components/subMain/contentFooter";
-import {ContentList} from "../components/main/contentList";
-import screen1 from "../assets/img/subMain_5/subMain_5_1.jpg";
-import screen2 from "../assets/img/subMain_5/subMain_5_2.jpg";
-import screen3 from "../assets/img/subMain_5/subMain_5_3.jpg";
-import screen4 from "../assets/img/subMain_5/subMain_5_4.jpg";
+import {HeadTitle} from "../../components/subMain/headTitle";
+import {Tabs} from "../../components/subMain/Tabs";
+import {ContentTitle} from "../../components/subMain/contentTitle";
+import {ContentFooter} from "../../components/subMain/contentFooter";
+import {ContentList} from "../../components/main/contentList";
+import screen1 from "../../assets/img/subMain_5/subMain_5_1.jpg";
+import screen2 from "../../assets/img/subMain_5/subMain_5_2.jpg";
+import screen3 from "../../assets/img/subMain_5/subMain_5_3.jpg";
+import screen4 from "../../assets/img/subMain_5/subMain_5_4.jpg";
 
 export const SubMainFive = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }) => {
     const title = 'Discover a perspective that enhances your understanding'

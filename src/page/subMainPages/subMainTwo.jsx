@@ -1,11 +1,11 @@
-import {HeadTitle} from "../components/subMain/headTitle";
-import {Tabs} from "../components/subMain/Tabs";
-import {ContentTitle} from "../components/subMain/contentTitle";
-import {ContentFooter} from "../components/subMain/contentFooter";
-import screen1 from "../assets/img/subMain_2/subMain_2_1.jpg";
-import screen2 from "../assets/img/subMain_2/subMain_2_2.jpg";
-import screen3 from "../assets/img/subMain_2/subMain_2_3.jpg";
-import {ContentList} from "../components/main/contentList";
+import {HeadTitle} from "../../components/subMain/headTitle";
+import {Tabs} from "../../components/subMain/Tabs";
+import {ContentTitle} from "../../components/subMain/contentTitle";
+import {ContentFooter} from "../../components/subMain/contentFooter";
+import screen1 from "../../assets/img/subMain_2/subMain_2_1.jpg";
+import screen2 from "../../assets/img/subMain_2/subMain_2_2.jpg";
+import screen3 from "../../assets/img/subMain_2/subMain_2_3.jpg";
+import {ContentList} from "../../components/main/contentList";
 
 export const SubMainTwo = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }) => {
     const title = 'Save your time on inputting'

@@ -1,11 +1,11 @@
-import {Tabs} from "../components/subMain/Tabs";
-import {HeadTitle} from "../components/subMain/headTitle";
-import {ContentTitle} from "../components/subMain/contentTitle";
-import {ContentFooter} from "../components/subMain/contentFooter";
-import screen1 from '../assets/img/subMain_1/subMain_1_1.jpg'
-import screen2 from '../assets/img/subMain_1/subMain_1_2.jpg'
-import screen3 from '../assets/img/subMain_1/subMain_1_3.jpg'
-import {ContentList} from "../components/main/contentList";
+import {Tabs} from "../../components/subMain/Tabs";
+import {HeadTitle} from "../../components/subMain/headTitle";
+import {ContentTitle} from "../../components/subMain/contentTitle";
+import {ContentFooter} from "../../components/subMain/contentFooter";
+import screen1 from '../../assets/img/subMain_1/subMain_1_1.jpg'
+import screen2 from '../../assets/img/subMain_1/subMain_1_2.jpg'
+import screen3 from '../../assets/img/subMain_1/subMain_1_3.jpg'
+import {ContentList} from "../../components/main/contentList";
 export const SubMainOne = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }) => {
     const title = 'Tailor Your Tactics'
     const subtitle = 'Enter the Strategy Editor – the game-changer that sets you apart from the opponents. It\'s all about tailoring your tactics with surgical precision.'

@@ -1,10 +1,10 @@
-import {HeadTitle} from "../components/subMain/headTitle";
-import {Tabs} from "../components/subMain/Tabs";
-import {ContentTitle} from "../components/subMain/contentTitle";
-import {ContentFooter} from "../components/subMain/contentFooter";
-import {ContentList} from "../components/main/contentList";
-import screen1 from "../assets/img/subMain_4/subMain_4_1.jpg";
-import screen2 from "../assets/img/subMain_4/subMain_4_2.jpg";
+import {HeadTitle} from "../../components/subMain/headTitle";
+import {Tabs} from "../../components/subMain/Tabs";
+import {ContentTitle} from "../../components/subMain/contentTitle";
+import {ContentFooter} from "../../components/subMain/contentFooter";
+import {ContentList} from "../../components/main/contentList";
+import screen1 from "../../assets/img/subMain_4/subMain_4_1.jpg";
+import screen2 from "../../assets/img/subMain_4/subMain_4_2.jpg";
 
 export const SubMainFour = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }) => {
     const title = 'New way to visualize your opportunities'
