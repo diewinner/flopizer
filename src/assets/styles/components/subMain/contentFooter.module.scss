@@ -4,7 +4,7 @@ $k:1;
   display: flex;
   flex-direction: column;
   gap: 93px * $k;
-  width: 1300px * $k;
+  width: 100%;
   margin-top: 72px * $k;
 }
 
@@ -60,7 +60,7 @@ $k:1;
   gap: 71px * $k;
   padding-left: 81px * $k;
   padding-bottom: 64px * $k;
-  align-items: center * $k;
+  align-items: center;
 }
 
 .demo_text {
