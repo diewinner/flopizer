@@ -3,7 +3,36 @@ import Cube from '../assets/img/Cube.jpg'
 import firstChild from "../assets/img/firstChild.jpg";
 import secChild from "../assets/img/secChild.jpg";
 import screenShot from '../assets/img/screenShotPostFlopizer.jpg'
+import {PriceBoard} from "../components/main/priceBoard";
+import Star from "../assets/img/Star 2.svg"
+import {CeoStatement} from "../components/main/ceoStatement";
 export const MainSec = ({ cls }) => {
+    const contentPrice =
+        {
+            title:"Standard",
+            li1:"Full version",
+            li2:"All features included",
+            li3:"More features yet to come",
+            price:"$270",
+            priceOld:"$300",
+            btn:"Buy the Standard Pack",
+            info:"One-time purchase",
+        }
+
+    const contentFree =
+        {
+            title:"Free",
+            li1:"Great way to explore the features",
+            li2:"Great way to explore the features",
+            price:"$0",
+            btn:"Try it for free"
+        }
+
+    const ceo = {
+        text:'“All I wanted to do was create a postflop GTO solver that wouldn\'t induce nosebleeds. I believe we\'ve succeeded.”',
+        author: 'Valentin Kuzub, CEO and Founder',
+        btn: 'Pricing options'
+    }
     return (
         <div className={cls.main_container}>
             <div className={cls.m_title_container}>
@@ -142,67 +171,43 @@ export const MainSec = ({ cls }) => {
             </div>
 
             <div className={cls.price_container}>
-                <div className={cls.skills_title}>
+                {Star && <div className={cls.price_discount_star}><span>-10%</span>
+                    <div>discount for the early birds</div></div>}
+                <div className={cls.price_title}>
                     Fair prices for fair play
                 </div>
                 <div>
                     <div className={cls.price_container_flex}>
-                        <div className={cls.price_item}>
-                            <div className={cls.price_item__header}></div>
-                            <div className={cls.price_item__title}>
-                                Free
-                            </div>
-                            <ul className={cls.price_item__list}>
-                                <li className={cls.price_item__list__item}>Great way to explore the features</li>
-                                <li className={cls.price_item__list__item}>All tools except flop editing</li>
-                            </ul>
-                            <div className={cls.price_item__price}>
-                                $0
-                            </div>
-                            <div className={cls.price_item__container_btn}>
-                                <button className={cls.price_item__btn} >
-                                    Try it for free
-                                </button>
-                            </div>
-                        </div>
-                        <div className={cls.price_item__icm}>
-                            <div className={cls.price_item__icm__header}></div>
-                            <div className={cls.price_item__icm__title}>
-                                Standart
-                            </div>
-                            <ul className={cls.price_item__icm__list}>
-                                <li className={cls.price_item__icm__list__item}>Full version</li>
-                                <li className={cls.price_item__icm__list__item}>All features included</li>
-                                <li className={cls.price_item__icm__list__item}>More features yet to come</li>
-                            </ul>
-                            <div className={cls.price_item__icm__price}>
-                                <span className={cls.price_item__icm__price__true}>$300</span>
-                                <span className={cls.price_item__icm__price__sale}>$270</span>
-                                <div className={cls.price_item__icm__price__time}>
-                                    One-time purchase
-                                </div>
-                            </div>
-                            <div className={cls.price_item__icm__container_btn}>
-                                <button className={cls.price_item__icm__btn} >
-                                    Buy the Standard Pack
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                <PriceBoard
+                                    cls={cls}
+                                    clsBtn={cls.price_item__btn}
+                                    clsLi={cls.price_item__list__item}
+                                    clsBorder={cls.price_item}
+                                    clsHead={cls.price_item__header}
+                                    title={contentFree.title}
+                                    li1={contentFree.li1}
+                                    li2={contentFree.li2}
+                                    price={contentFree.price}
+                                    btn={contentFree.btn} />
+                                <PriceBoard
 
-            <div className={cls.price_options_container}>
-                <div className={cls.price_options__text}>
-                    <div className={cls.price_options__text__title}>
-                        “All I wanted to do was create a postflop GTO solver that wouldn't induce nosebleeds. I believe we've succeeded.”
+                                    cls={cls}
+                                    clsBtn={cls.price_item__icm__btn}
+                                    clsLi={cls.price_item__icm__list__item}
+                                    clsBorder={cls.price_item__icm}
+                                    clsHead={cls.price_item__icm__header}
+                                    title={contentPrice.title}
+                                    li1={contentPrice.li1}
+                                    li2={contentPrice.li2}
+                                    li3={contentPrice.li3}
+                                    price={contentPrice.price}
+                                    priceOld={contentPrice.priceOld}
+                                    btn={contentPrice.btn}
+                                    info={contentPrice.info}/>
                     </div>
-                    <div className={cls.price_options__text__subtitle}>Valentin Kuzub, CEO and Founder</div>
-                </div>
-                <div className={cls.price_options__btn_container}>
-                    <button className={cls.price_options__btn_container__btn}>Pricing options</button>
                 </div>
             </div>
+            <CeoStatement text={ceo.text} author={ceo.author} btn={ceo.btn} cls={cls}/>
         </div>
     )
 }

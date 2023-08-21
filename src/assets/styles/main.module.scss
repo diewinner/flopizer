@@ -1,6 +1,12 @@
 
 $k:1;
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
 .main_container {
     margin: 0 auto;
 }
@@ -12,7 +18,9 @@ $k:1;
     align-items: center;
     height: 835px * $k;
     margin: 0 auto;
-    background: url("../img/bg_main.jpg") no-repeat;
+    background: url("../img/bg_main.jpg"), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     &__text {
         display: flex;
         flex-direction: column;
@@ -70,8 +78,8 @@ $k:1;
     &__info {
         background-image: url("../img/logoPostflopizer.png");
         background-repeat: no-repeat;
-        background-size: 577px 324px;
-        background-position: 49px -73px;
+        background-size: 577px * $k 324px * $k;
+        background-position: 49px * $k -73px * $k;
         margin:0 auto;
         width: 1627px * $k;
         height: 967px * $k;
@@ -174,8 +182,8 @@ $k:1;
     &__info {
         background-image: url("../img/icmizerLogo.png");
         background-repeat: no-repeat;
-        background-size: 320px 86px;
-        background-position: 39px 45px;
+        background-size: 320px * $k 86px * $k;
+        background-position: 39px * $k 45px * $k;
         margin:0 auto;
         width: 1627px * $k;
         height: 967px * $k;
@@ -210,7 +218,7 @@ $k:1;
                     padding-right: 41px * $k;
                     max-width: 644px * $k;
                     &__item {
-                        max-width: 600px;
+                        max-width: 600px * $k;
                         color: #000;
                         font-size: 35px * $k;
                         font-weight: 500;
@@ -287,8 +295,8 @@ $k:1;
     width: 740px * $k;
     gap: 58px * $k;
     &__img {
-        width: 330px;
-        height: 330px;
+        width: 330px * $k;
+        height: 330px * $k;
         img {
             width: 100%;
             height: 100%;
@@ -376,6 +384,7 @@ $k:1;
         line-height: 64px * $k;
         letter-spacing: 1px * $k;
         padding-bottom: 57px * $k;
+        padding-top: 18px * $k;
 
     }
     &__container_btn {
@@ -386,6 +395,7 @@ $k:1;
         display: flex;
         cursor: pointer;
         justify-content: center;
+        align-items: center;
         margin: 0 auto;
         border: none;
         color: #FFF;
@@ -456,6 +466,7 @@ $k:1;
         display: flex;
         cursor: pointer;
         justify-content: center;
+        align-items: center;
         margin: 0 auto;
         border: 3px solid #009617;;
         color: #000;

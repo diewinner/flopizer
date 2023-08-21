@@ -3,7 +3,14 @@ import screenShotPost from  '../assets/img/screenShotPostFlopizer.jpg'
 import screenShotIc from  '../assets/img/icmizerScreen.jpg'
 import firstChild from '../assets/img/firstChild.jpg'
 import secChild from '../assets/img/secChild.jpg'
+import {CeoStatement} from "../components/main/ceoStatement";
 export const Main = ({cls}) => {
+
+    const ceo = {
+        text:'“By crafting an engaging and user-friendly experience, I aimed to make the journey of acquiring poker skills a genuinely enjoyable one, fostering a renewed passion for the game.”',
+        author: 'Valentin Kuzub, CEO and Founder',
+        btn: 'Pricing options'
+    }
     return (
         <div className={cls.main_container}>
 
@@ -176,17 +183,7 @@ export const Main = ({cls}) => {
             <div className={cls.info_btn_container}>
                     More packages and pricing options >>
             </div>
-            <div className={cls.price_options_container}>
-                <div className={cls.price_options__text}>
-                    <div className={cls.price_options__text__title}>
-                        “By crafting an engaging and user-friendly experience, I aimed to make the journey of acquiring poker skills a genuinely enjoyable one, fostering a renewed passion for the game.”
-                    </div>
-                    <div className={cls.price_options__text__subtitle}>Valentin Kuzub, CEO and Founder</div>
-                </div>
-                <div className={cls.price_options__btn_container}>
-                    <button className={cls.price_options__btn_container__btn}>Pricing options</button>
-                </div>
-            </div>
+            <CeoStatement author={ceo.author} btn={ceo.btn} text={ceo.text} cls={cls}/>
         </div>
     );
 }

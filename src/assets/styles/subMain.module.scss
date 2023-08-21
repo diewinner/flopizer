@@ -1,7 +1,57 @@
 
 $k: 1;
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.submain_wrapper {
+  width: 1755px;
+  margin: 0 auto;
+  padding-top: 58px;
+}
+
 .submain_content_container {
   display: flex;
   gap: 50px * $k;
+}
+
+.submain_content {
+  width: 1150px;
+}
+
+.submain_list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  width: 100%;
+  margin-top: 105px;
+  margin-bottom: 150px;
+  &__item {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    &__text {
+      min-width: 485px;
+      max-width: 550px;
+      color: #000;
+      &__title {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0.5px;
+      }
+      &__subtitle {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 45px;
+        letter-spacing: 0.5px;
+      }
+    }
+    &__img {
+
+    }
+  }
 }

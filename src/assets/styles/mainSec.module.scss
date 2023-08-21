@@ -1,5 +1,10 @@
-
 $k:1;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
 
 .main_container {
     margin: 0 auto;
@@ -9,13 +14,14 @@ $k:1;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(89deg, #F3F3F3 0%, #F3F3F3 33.33%, #F3F3F3 75%, rgba(243, 243, 243, 0.00) 87.50%);
     height: 835px * $k;
     margin: 0 auto;
     &__text {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 1060px * $k;
+        width: 850px * $k;
         gap: 45px * $k;
         margin-left: 227px * $k;
         &__title {
@@ -94,8 +100,8 @@ $k:1;
     width: 576px * $k;
     gap: 22px * $k;
     &__img {
-        width: 166px;
-        height: 166px;
+        width: 166px * $k;
+        height: 166px * $k;
         img {
             width: 100%;
             height: 100%;
@@ -131,9 +137,47 @@ $k:1;
 .price_container {
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 110px * $k;
     margin-top: 163px * $k;
-    margin-bottom: 180px;
+    margin-bottom: 180px * $k;
+    img {
+        position: absolute;
+        top: 85px;
+        right: 0;
+        width: 345px;
+        height: 345px;
+    }
+}
+
+.price_discount_star {
+    position: absolute;
+    top: 65px;
+    right: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    background-image: url("../img/Star 2.svg");
+    background-repeat: no-repeat;
+    color: #000;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    span {
+        width: 100%;
+        text-align: center;
+        color: #D42176;
+        font-weight: 700;
+        font-size: 50px;
+        letter-spacing: 1px;
+    }
+    div {
+        width: 240px;
+        text-align: center;
+    }
 }
 
 .price_container_flex {
@@ -141,19 +185,34 @@ $k:1;
     gap: 270px * $k;
     justify-content: center;
 }
-
+.price_title {
+    color: #000;
+    text-align: center;
+    font-size: 45px * $k;
+    font-weight: 700;
+    line-height: 64px * $k;
+    letter-spacing: 0.9px * $k;
+}
 .price_item {
     width: 658px * $k;
-    border: 5px solid #A19FAA;
+    border: 5px * $k solid #A19FAA;
+    height: 855px;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 510px;
+        min-height: 600px;
+        padding-top: 121px * $k;
+        padding-left: 76px * $k;
+    }
     &__header {
         width: 100%;
         height: 34px * $k;
         background-color: #A19FAA;
     }
     &__title {
-        margin-top: 121px * $k;
-        margin-left: 76px * $k;
-        max-width: 375px * $k;
+        width: 100%;
         color: #000;
         font-size: 45px * $k;
         font-weight: 600;
@@ -163,13 +222,13 @@ $k:1;
     &__list {
         width: 100%;
         list-style: none;
+        min-height: 193px;
         margin-bottom: 26px * $k;
         margin-top: 18px * $k;
         &__item {
-            width: 505px * $k;
-            margin: 0 auto;
+            width: 100%;
             color: #A19FAA;
-            font-size: 25px;
+            font-size: 25px * $k;
             line-height: 64px * $k;
             letter-spacing: 0.5px;
         }
@@ -196,7 +255,7 @@ $k:1;
         cursor: pointer;
         justify-content: center;
         margin: 0 auto;
-        border: 3px solid #A19FAA;
+        border: 3px * $k solid #A19FAA;
         color: #000;
         text-align: center;
         font-size: 25px * $k;
@@ -212,7 +271,9 @@ $k:1;
 
 .price_item__icm {
     width: 658px * $k;
-    border: 5px solid #D42176;
+    border: 5px * $k solid #D42176;
+    height: 855px;
+
     &__header {
         width: 100%;
         height: 34px * $k;
@@ -247,8 +308,7 @@ $k:1;
 
     }
     &__price {
-        width: 376px * $k;
-        margin: 0 auto;
+        width: 100%;
         text-align: center;
         color: #000;
         font-size: 50px * $k;
@@ -361,11 +421,12 @@ $k:1;
 
 .skills_title {
     color: #000;
+    padding-top: 118px * $k;
     text-align: center;
     font-size: 45px * $k;
     font-weight: 700;
     line-height: 64px * $k;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.9px * $k;
     span {
         @extend .skills_title;
         color: #D42176;
@@ -377,6 +438,7 @@ $k:1;
     gap: 45px * $k;
     width: 1500px * $k;
     margin: 0 auto;
+    justify-content: center;
     &__flex {
         display: flex;
         flex-direction: column;
@@ -391,7 +453,7 @@ $k:1;
         color: #000;
         font-size: 45px * $k;
         font-weight: 700;
-        letter-spacing: 0.9px;
+        letter-spacing: 0.9px * $k;
         span {
             color: #D42176;
         }
@@ -402,7 +464,7 @@ $k:1;
         font-size: 30px * $k;
         font-weight: 500;
         line-height: 45px * $k;
-        letter-spacing: 0.6px;
+        letter-spacing: 0.6px * $k;
     }
 }
 
@@ -443,7 +505,7 @@ $k:1;
         color: #000;
         font-size: 30px * $k;
         font-style: normal;
-        font-weight: 500 * $k;
+        font-weight: 500;
         line-height: 64px * $k;
         letter-spacing: 0.6px * $k;
     }
