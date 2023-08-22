@@ -51,7 +51,11 @@ $k: 1;
       }
     }
     &__img {
-
+      max-width: 565px;
+      img {
+        width: 100%;
+      }
     }
+
   }
 }
