@@ -8,6 +8,7 @@ import './assets/styles/components/subMain/tabs.module.scss'
 import './assets/styles/components/subMain/headTitle.module.scss'
 import './assets/styles/components/subMain/contentTitle.module.scss'
 import './assets/styles/components/subMain/contentFooter.module.scss'
+import './assets/styles/components/main/toggle.module.scss'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

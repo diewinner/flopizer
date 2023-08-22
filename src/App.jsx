@@ -15,15 +15,15 @@ import clsTabs from './assets/styles/components/subMain/tabs.module.scss'
 import clsHead from './assets/styles/components/subMain/headTitle.module.scss'
 import clsContHead from './assets/styles/components/subMain/contentTitle.module.scss'
 import clsContFooter from './assets/styles/components/subMain/contentFooter.module.scss'
-
+import tog from './assets/styles/components/main/toggle.module.scss'
 
 function App() {
 
     return (
   <Routes>
 
-          <Route  path='/'  element=<Main cls={cls}/> />
-          <Route  path='/mainsec'  element=<MainSec cls={clsSec}/> />
+          <Route  path='/'  element=<Main cls={cls} clsSec={clsSec} tog={tog}/> />
+          <Route  path='/mainsec'  element=<MainSec cls={clsSec} tog={tog}/> />
           <Route  path='/submainone'  element=<SubMainOne  clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
           <Route  path='/submaintwo'  element=<SubMainTwo  clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />
           <Route  path='/submainthree'  element=<SubMainThree  clsContFooter={clsContFooter} clsContHead={clsContHead} clsTabs={clsTabs} clsHead={clsHead} cls={clsSubMain}/> />

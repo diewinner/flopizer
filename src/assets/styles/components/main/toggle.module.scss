@@ -1,0 +1,53 @@
+$k:1;
+
+.toggle_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.toggle_label {
+  position: relative;
+  display: inline-block;
+  width: 44px * $k;
+  height: 24px * $k;
+}
+
+.toggle_input {
+  display: none;
+}
+
+.toggle_slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border-radius: 15px * $k;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 2px * $k solid #4c7ebf;
+}
+
+.toggle_input:checked + .toggle_slider {
+  background-color: #fff;
+}
+
+.toggle_slider:before {
+  content: "";
+  position: absolute;
+  width: 16px * $k;
+  height: 16px * $k;
+  border-radius: 22px * $k;
+  background-color: #4c7ebf;
+  left: 2px * $k;
+  bottom: 2px * $k;
+  transition: all 0.4s ease 0s;
+}
+
+.toggle_input:checked + .toggle_slider:before {
+  transform: translateX(20px * $k);
+}

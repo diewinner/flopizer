@@ -4,13 +4,32 @@ import screenShotIc from '../../assets/img/icmizerScreen.jpg'
 import firstChild from '../../assets/img/firstChild.jpg'
 import secChild from '../../assets/img/secChild.jpg'
 import {CeoStatement} from "../../components/main/ceoStatement";
-export const Main = ({cls}) => {
+import {PriceBoard} from "../../components/main/priceBoard";
+import ToggleSlider from "../../components/main/toggle";
+export const Main = ({cls, clsSec, tog}) => {
 
     const ceo = {
         text:'“By crafting an engaging and user-friendly experience, I aimed to make the journey of acquiring poker skills a genuinely enjoyable one, fostering a renewed passion for the game.”',
         author: 'Valentin Kuzub, CEO and Founder',
         btn: 'Pricing options'
     }
+
+    const contentFree =
+        {
+            title:"Postflopizer ",
+            li1:"Great way to explore",
+            li2:"Great way to explore",
+            price:"0",
+            btn:"Get your Demo"
+        }
+    const contentFreeSec =
+        {
+            title:"Icmizer ",
+            li1:"Great way to explore",
+            li2:"Great way to explore",
+            price:"0",
+            btn:"Get your Trial"
+        }
     return (
         <div className={cls.main_container}>
 
@@ -137,8 +156,37 @@ export const Main = ({cls}) => {
                 <div  className={cls.postflopizer_detail_container__title}>
                     Try both products for free
                 </div>
+                <div className={tog.toggle_container}>
+                    <div>Text</div>
+                    <ToggleSlider tog={tog}/>
+                    <div>Text</div>
+                </div>
                 <div className={cls.price_container_flex}>
-                    <div className={cls.price_item}>
+                    <PriceBoard
+                        cls={clsSec}
+                        clsBtn={clsSec.price_item__btn}
+                        clsBtnCont={clsSec.price_item__container_btn}
+                        clsLi={clsSec.price_item__list__item}
+                        clsBorder={clsSec.price_item}
+                        clsHead={clsSec.price_item__header}
+                        title={contentFree.title}
+                        li1={contentFree.li1}
+                        li2={contentFree.li2}
+                        price={contentFree.price}
+                        btn={contentFree.btn} />
+                    <PriceBoard
+                        cls={clsSec}
+                        clsBtn={clsSec.price_item__btn}
+                        clsBtnCont={clsSec.price_item__container_btn}
+                        clsLi={clsSec.price_item__list__item}
+                        clsBorder={clsSec.price_item}
+                        clsHead={clsSec.price_item__header}
+                        title={contentFreeSec.title}
+                        li1={contentFreeSec.li1}
+                        li2={contentFreeSec.li2}
+                        price={contentFreeSec.price}
+                        btn={contentFreeSec.btn} />
+{/*                    <div className={cls.price_item}>
                        <div className={cls.price_item__header}></div>
                         <div className={cls.price_item__title}>
                             Postflopizer Free Trial
@@ -177,7 +225,7 @@ export const Main = ({cls}) => {
                                 Get your Trial Version
                             </button>
                         </div>
-                    </div>
+                    </div>*/}
                 </div>
             </div>
             <div className={cls.info_btn_container}>

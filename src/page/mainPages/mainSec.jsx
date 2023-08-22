@@ -1,30 +1,34 @@
-import React from "react";
+import React, {useState} from "react";
 import Cube from '../../assets/img/Cube.jpg'
 import firstChild from "../../assets/img/firstChild.jpg";
 import secChild from "../../assets/img/secChild.jpg";
-import screenShot from '../../assets/img/screenShotPostFlopizer.jpg'
 import {PriceBoard} from "../../components/main/priceBoard";
-import Star from "../../assets/img/Star 2.svg"
 import {CeoStatement} from "../../components/main/ceoStatement";
-export const MainSec = ({ cls }) => {
+import {Caruselitem1} from "../../components/main/caruselitems/caruselitem1";
+import {Caruselitem2} from "../../components/main/caruselitems/caruselitem2";
+import {Caruselitem3} from "../../components/main/caruselitems/caruselitem3";
+import {Caruselitem4} from "../../components/main/caruselitems/caruselitem4";
+import ToggleSlider from "../../components/main/toggle";
+export const MainSec = ({ cls, tog }) => {
+    const [btn,setBtn] = useState('item1')
     const contentPrice =
         {
             title:"Standard",
             li1:"Full version",
             li2:"All features included",
             li3:"More features yet to come",
-            price:"$270",
-            priceOld:"$300",
-            btn:"Buy the Standard Pack",
-            info:"One-time purchase",
+            price:"270",
+            btn:"Standard Pack",
+            guest:"*with guest users",
+            timePrice:"/MONTH"
         }
 
     const contentFree =
         {
             title:"Free",
-            li1:"Great way to explore the features",
-            li2:"Great way to explore the features",
-            price:"$0",
+            li1:"Great way to explore",
+            li2:"Great way to explore",
+            price:"0",
             btn:"Try it for free"
         }
 
@@ -92,32 +96,26 @@ export const MainSec = ({ cls }) => {
             </div>
 
             <div className={cls.strategy_container}>
-                <div className={cls.strategy_text}>
-                    <div className={cls.strategy_text__title}>
-                        Strategy Editor
-                    </div>
-                    <div className={cls.strategy_text__subtitle}>
-                        Lock any hand, customize any nod
-                    </div>
-                    <div className={cls.strategy_text__btn}>
-                        Learn more >
-                    </div>
-                    <ul className={cls.strategy_text__list}>
-                        <li className={cls.strategy_text__list__item}>Quick Start Mode</li>
-                        <li className={cls.strategy_text__list__item}>5 Analytical View Modes</li>
-                        <li className={cls.strategy_text__list__item}>Your History, Saved</li>
-                    </ul>
-                    <div className={cls.m_title_container__btn_container}>
-                        <button>
-                            Try for free
-                        </button>
-                    </div>
+                <div className={cls.carusel_btns}>
+                    <button onClick={() => {
+                        setBtn('item1');
+                    }} className={btn === 'item1' ? cls.carusel_btns__item__active : cls.carusel_btns__item}>Strategy Editor</button>
+                    <button onClick={() => {
+                        setBtn('item2')
+                    }} className={btn === 'item2' ? cls.carusel_btns__item__active : cls.carusel_btns__item}>Quick Start Mode</button>
+                    <button onClick={() => {
+                        setBtn('item3')
+                    }} className={btn === 'item3' ? cls.carusel_btns__item__active : cls.carusel_btns__item}>5 Analytical View Modes</button>
+                    <button onClick={() => {
+                        setBtn('item4')
+                    }} className={btn === 'item4' ? cls.carusel_btns__item__active : cls.carusel_btns__item}>Your History, Saved</button>
                 </div>
-                <div className={cls.strategy_img}>
-                    <img src={screenShot} alt={'Screenshot'}/>
-                </div>
-            </div>
+                <div className={btn === 'item1' ? cls.carusel_item__active : cls.carusel_item}>{btn === 'item1' && <Caruselitem1 cls={cls}/>}</div>
+                <div className={btn === 'item2' ? cls.carusel_item__active : cls.carusel_item}>{btn === 'item2' && <Caruselitem2 cls={cls}/>}</div>
+                <div className={btn === 'item3' ? cls.carusel_item__active : cls.carusel_item}>{btn === 'item3' && <Caruselitem3 cls={cls}/>}</div>
+                <div className={btn === 'item4' ? cls.carusel_item__active : cls.carusel_item}>{btn === 'item4' && <Caruselitem4 cls={cls}/>}</div>
 
+            </div>
             <div className={cls.skills_container}>
                 <div className={cls.skills_title}>
                     Fuel your skills, <span>multiply your wins</span>
@@ -171,42 +169,43 @@ export const MainSec = ({ cls }) => {
             </div>
 
             <div className={cls.price_container}>
-
                 <div className={cls.price_title}>
                     Fair prices for fair play
                 </div>
+                <div className={tog.toggle_container}>
+                    <div>Text</div>
+                    <ToggleSlider tog={tog}/>
+                    <div>Text</div>
+                </div>
                 <div>
                     <div className={cls.price_container_flex}>
-                        {Star && <div className={cls.price_discount_star}><span>-10%</span>
-                            <div>discount for the early birds</div></div>}
-                                <PriceBoard
-                                    cls={cls}
-                                    clsBtn={cls.price_item__btn}
-                                    clsBtnCont={cls.price_item__container_btn}
-                                    clsLi={cls.price_item__list__item}
-                                    clsBorder={cls.price_item}
-                                    clsHead={cls.price_item__header}
-                                    title={contentFree.title}
-                                    li1={contentFree.li1}
-                                    li2={contentFree.li2}
-                                    price={contentFree.price}
-                                    btn={contentFree.btn} />
-                                <PriceBoard
-                                    cls={cls}
-                                    clsBtn={cls.price_item__icm__btn}
-                                    clsBtnCont={cls.price_item__icm__container_btn}
-
-                                    clsLi={cls.price_item__icm__list__item}
-                                    clsBorder={cls.price_item__icm}
-                                    clsHead={cls.price_item__icm__header}
-                                    title={contentPrice.title}
-                                    li1={contentPrice.li1}
-                                    li2={contentPrice.li2}
-                                    li3={contentPrice.li3}
-                                    price={contentPrice.price}
-                                    priceOld={contentPrice.priceOld}
-                                    btn={contentPrice.btn}
-                                    info={contentPrice.info}/>
+                        <PriceBoard
+                            cls={cls}
+                            clsBtn={cls.price_item__btn}
+                            clsBtnCont={cls.price_item__container_btn}
+                            clsLi={cls.price_item__list__item}
+                            clsBorder={cls.price_item}
+                            clsHead={cls.price_item__header}
+                            title={contentFree.title}
+                            li1={contentFree.li1}
+                            li2={contentFree.li2}
+                            price={contentFree.price}
+                            btn={contentFree.btn} />
+                        <PriceBoard
+                            cls={cls}
+                            clsBtn={cls.price_item__btn}
+                            clsBtnCont={cls.price_item__icm__container_btn}
+                            clsLi={cls.price_item__list__item}
+                            clsBorder={cls.price_item__icm}
+                            clsHead={cls.price_item__header}
+                            title={contentPrice.title}
+                            li1={contentPrice.li1}
+                            li2={contentPrice.li2}
+                            price={contentPrice.price}
+                            btn={contentPrice.btn}
+                            guest={contentPrice.guest}
+                            timePrice={contentPrice.timePrice}
+                        />
                     </div>
                 </div>
             </div>
