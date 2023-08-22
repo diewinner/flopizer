@@ -7,8 +7,13 @@ import screen1 from "../../assets/img/subMain_5/subMain_5_1.jpg";
 import screen2 from "../../assets/img/subMain_5/subMain_5_2.jpg";
 import screen3 from "../../assets/img/subMain_5/subMain_5_3.jpg";
 import screen4 from "../../assets/img/subMain_5/subMain_5_4.jpg";
+import cls from '../../assets/styles/subMain.module.scss'
+import clsTabs from '../../assets/styles/components/subMain/tabs.module.scss'
+import clsHead from '../../assets/styles/components/subMain/headTitle.module.scss'
+import clsContHead from '../../assets/styles/components/subMain/contentTitle.module.scss'
+import clsContFooter from '../../assets/styles/components/subMain/contentFooter.module.scss'
 
-export const SubMainFive = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }) => {
+export const SubMainFive = () => {
     const title = 'Discover a perspective that enhances your understanding'
     const subtitle = 'Enhance your learning experience by leveraging four additional reports, each presenting data from various angles. Each mode offers distinct data aggregation levels, giving you comprehensive insights.'
     const list =

@@ -6,8 +6,12 @@ import screen1 from "../../assets/img/subMain_2/subMain_2_1.jpg";
 import screen2 from "../../assets/img/subMain_2/subMain_2_2.jpg";
 import screen3 from "../../assets/img/subMain_2/subMain_2_3.jpg";
 import {ContentList} from "../../components/main/contentList";
-
-export const SubMainTwo = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }) => {
+import cls from '../../assets/styles/subMain.module.scss'
+import clsTabs from '../../assets/styles/components/subMain/tabs.module.scss'
+import clsHead from '../../assets/styles/components/subMain/headTitle.module.scss'
+import clsContHead from '../../assets/styles/components/subMain/contentTitle.module.scss'
+import clsContFooter from '../../assets/styles/components/subMain/contentFooter.module.scss'
+export const SubMainTwo = () => {
     const title = 'Save your time on inputting'
     const subtitle = 'Meet Quick Start Mode – a setup that leads you straight to the essence of your game without unnecessary overthinking. '
     const list =

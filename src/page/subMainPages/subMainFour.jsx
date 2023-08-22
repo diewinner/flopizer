@@ -5,8 +5,12 @@ import {ContentFooter} from "../../components/subMain/contentFooter";
 import {ContentList} from "../../components/main/contentList";
 import screen1 from "../../assets/img/subMain_4/subMain_4_1.jpg";
 import screen2 from "../../assets/img/subMain_4/subMain_4_2.jpg";
-
-export const SubMainFour = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }) => {
+import cls from '../../assets/styles/subMain.module.scss'
+import clsTabs from '../../assets/styles/components/subMain/tabs.module.scss'
+import clsHead from '../../assets/styles/components/subMain/headTitle.module.scss'
+import clsContHead from '../../assets/styles/components/subMain/contentTitle.module.scss'
+import clsContFooter from '../../assets/styles/components/subMain/contentFooter.module.scss'
+export const SubMainFour = () => {
     const title = 'New way to visualize your opportunities'
 
     const list =

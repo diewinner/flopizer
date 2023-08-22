@@ -6,7 +6,12 @@ import screen1 from '../../assets/img/subMain_1/subMain_1_1.jpg'
 import screen2 from '../../assets/img/subMain_1/subMain_1_2.jpg'
 import screen3 from '../../assets/img/subMain_1/subMain_1_3.jpg'
 import {ContentList} from "../../components/main/contentList";
-export const SubMainOne = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }) => {
+import cls from '../../assets/styles/subMain.module.scss'
+import clsTabs from '../../assets/styles/components/subMain/tabs.module.scss'
+import clsHead from '../../assets/styles/components/subMain/headTitle.module.scss'
+import clsContHead from '../../assets/styles/components/subMain/contentTitle.module.scss'
+import clsContFooter from '../../assets/styles/components/subMain/contentFooter.module.scss'
+export const SubMainOne = () => {
     const title = 'Tailor Your Tactics'
     const subtitle = 'Enter the Strategy Editor – the game-changer that sets you apart from the opponents. It\'s all about tailoring your tactics with surgical precision.'
     const list =

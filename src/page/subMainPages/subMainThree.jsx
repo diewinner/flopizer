@@ -6,8 +6,12 @@ import {ContentList} from "../../components/main/contentList";
 import screen1 from "../../assets/img/subMain_3/subMain_3_1.jpg";
 import screen2 from "../../assets/img/subMain_3/subMain_3_2.jpg";
 import screen3 from "../../assets/img/subMain_3/subMain_3_3.jpg";
-
-export const SubMainThree = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }) => {
+import cls from '../../assets/styles/subMain.module.scss'
+import clsTabs from '../../assets/styles/components/subMain/tabs.module.scss'
+import clsHead from '../../assets/styles/components/subMain/headTitle.module.scss'
+import clsContHead from '../../assets/styles/components/subMain/contentTitle.module.scss'
+import clsContFooter from '../../assets/styles/components/subMain/contentFooter.module.scss'
+export const SubMainThree = () => {
     const title = 'See your strategy evolve in a real-time'
 
     const subtitle = 'Gain a better understanding of what lies ahead in the tree and seamlessly modify it to fit your needs with our Tree Preview feature.'

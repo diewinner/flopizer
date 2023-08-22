@@ -9,18 +9,22 @@ import {Caruselitem2} from "../../components/main/caruselitems/caruselitem2";
 import {Caruselitem3} from "../../components/main/caruselitems/caruselitem3";
 import {Caruselitem4} from "../../components/main/caruselitems/caruselitem4";
 import ToggleSlider from "../../components/main/toggle";
-export const MainSec = ({ cls, tog }) => {
+import tog from '../../assets/styles/components/main/toggle.module.scss'
+import cls from '../../assets/styles/mainSec.module.scss';
+
+export const MainSec = () => {
     const [btn,setBtn] = useState('item1')
     const contentPrice =
         {
-            title:"Standard",
+            title:"Pro",
             li1:"Full version",
             li2:"All features included",
             li3:"More features yet to come",
-            price:"270",
+            price:"6",
             btn:"Standard Pack",
             guest:"*with guest users",
-            timePrice:"/MONTH"
+            timePrice:"/MONTH",
+            user:"/USER"
         }
 
     const contentFree =
@@ -97,18 +101,28 @@ export const MainSec = ({ cls, tog }) => {
 
             <div className={cls.strategy_container}>
                 <div className={cls.carusel_btns}>
+                    <div className={cls.carusel_btns_wrapper}>
                     <button onClick={() => {
                         setBtn('item1');
-                    }} className={btn === 'item1' ? cls.carusel_btns__item__active : cls.carusel_btns__item}>Strategy Editor</button>
+                    }} className={btn === 'item1' ? cls.carusel_btns_wrapper__item__active : cls.carusel_btns_wrapper__item}>Strategy
+                        Editor
+                    </button>
                     <button onClick={() => {
                         setBtn('item2')
-                    }} className={btn === 'item2' ? cls.carusel_btns__item__active : cls.carusel_btns__item}>Quick Start Mode</button>
+                    }} className={btn === 'item2' ? cls.carusel_btns_wrapper__item__active : cls.carusel_btns_wrapper__item}>Quick Start
+                        Mode
+                    </button>
                     <button onClick={() => {
                         setBtn('item3')
-                    }} className={btn === 'item3' ? cls.carusel_btns__item__active : cls.carusel_btns__item}>5 Analytical View Modes</button>
+                    }} className={btn === 'item3' ? cls.carusel_btns_wrapper__item__active : cls.carusel_btns_wrapper__item}>5
+                        Analytical View Modes
+                    </button>
                     <button onClick={() => {
                         setBtn('item4')
-                    }} className={btn === 'item4' ? cls.carusel_btns__item__active : cls.carusel_btns__item}>Your History, Saved</button>
+                    }} className={btn === 'item4' ? cls.carusel_btns_wrapper__item__active : cls.carusel_btns_wrapper__item}>Your
+                        History, Saved
+                    </button>
+                    </div>
                 </div>
                 <div className={btn === 'item1' ? cls.carusel_item__active : cls.carusel_item}>{btn === 'item1' && <Caruselitem1 cls={cls}/>}</div>
                 <div className={btn === 'item2' ? cls.carusel_item__active : cls.carusel_item}>{btn === 'item2' && <Caruselitem2 cls={cls}/>}</div>
@@ -169,13 +183,15 @@ export const MainSec = ({ cls, tog }) => {
             </div>
 
             <div className={cls.price_container}>
-                <div className={cls.price_title}>
-                    Fair prices for fair play
-                </div>
-                <div className={tog.toggle_container}>
-                    <div>Text</div>
-                    <ToggleSlider tog={tog}/>
-                    <div>Text</div>
+                <div className={cls.price_title_container}>
+                    <div className={cls.price_title}>
+                        Fair prices for fair play
+                    </div>
+                    <div className={tog.toggle_container}>
+                        <div>Text</div>
+                        <ToggleSlider tog={tog}/>
+                        <div>Text</div>
+                    </div>
                 </div>
                 <div>
                     <div className={cls.price_container_flex}>
@@ -205,6 +221,21 @@ export const MainSec = ({ cls, tog }) => {
                             btn={contentPrice.btn}
                             guest={contentPrice.guest}
                             timePrice={contentPrice.timePrice}
+                        />
+                        <PriceBoard
+                            cls={cls}
+                            clsBtn={cls.price_item__btn}
+                            clsBtnCont={cls.price_item__icm__container_btn}
+                            clsLi={cls.price_item__list__item}
+                            clsBorder={cls.price_item__icm}
+                            clsHead={cls.price_item__header}
+                            title={contentPrice.title}
+                            li1={contentPrice.li1}
+                            li2={contentPrice.li2}
+                            price={contentPrice.price}
+                            btn={contentPrice.btn}
+                            timePrice={contentPrice.timePrice}
+                            user={contentPrice.user}
                         />
                     </div>
                 </div>

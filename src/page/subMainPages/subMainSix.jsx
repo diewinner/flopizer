@@ -5,8 +5,12 @@ import {ContentFooter} from "../../components/subMain/contentFooter";
 import {ContentList} from "../../components/main/contentList";
 import screen1 from "../../assets/img/subMain_6/subMain_6_1.jpg";
 import screen2 from "../../assets/img/subMain_6/subMain_6_2.jpg";
-
-export const SubMainSix = ({ clsTabs, clsHead, clsContHead, cls, clsContFooter }) => {
+import cls from '../../assets/styles/subMain.module.scss'
+import clsTabs from '../../assets/styles/components/subMain/tabs.module.scss'
+import clsHead from '../../assets/styles/components/subMain/headTitle.module.scss'
+import clsContHead from '../../assets/styles/components/subMain/contentTitle.module.scss'
+import clsContFooter from '../../assets/styles/components/subMain/contentFooter.module.scss'
+export const SubMainSix = () => {
     const title = 'Revisit your insights whenever you need'
     const subtitle = 'Preserve your hard-earned strategies, revisit them, and unveil fresh insights by comparing them with new ones.'
     const list =

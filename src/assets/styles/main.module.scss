@@ -1,11 +1,6 @@
+$k:1;
 
-$k:0.5;
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-}
 
 .main_container {
     margin: 0 auto;
@@ -113,6 +108,8 @@ $k:0.5;
                 &__list {
                     padding-left: 117px * $k;
                     width: 100%;
+                    margin-top: 0;
+                    margin-bottom: 0;
                     &__item {
                         width: 100%;
                         color: #000;
@@ -216,6 +213,8 @@ $k:0.5;
                 &__list {
                     padding-right: 41px * $k;
                     max-width: 644px * $k;
+                    margin-top: 0;
+                    margin-bottom: 0;
                     &__item {
                         max-width: 600px * $k;
                         color: #000;

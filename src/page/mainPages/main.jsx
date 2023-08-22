@@ -6,7 +6,11 @@ import secChild from '../../assets/img/secChild.jpg'
 import {CeoStatement} from "../../components/main/ceoStatement";
 import {PriceBoard} from "../../components/main/priceBoard";
 import ToggleSlider from "../../components/main/toggle";
-export const Main = ({cls, clsSec, tog}) => {
+import tog from '../../assets/styles/components/main/toggle.module.scss'
+import cls from '../../assets/styles/main.module.scss';
+import clsSec from '../../assets/styles/mainSec.module.scss';
+
+export const Main = () => {
 
     const ceo = {
         text:'“By crafting an engaging and user-friendly experience, I aimed to make the journey of acquiring poker skills a genuinely enjoyable one, fostering a renewed passion for the game.”',
