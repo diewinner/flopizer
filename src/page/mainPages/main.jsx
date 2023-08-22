@@ -157,13 +157,15 @@ export const Main = () => {
                 </div>
             </div>
             <div className={cls.price_container}>
-                <div  className={cls.postflopizer_detail_container__title}>
-                    Try both products for free
-                </div>
-                <div className={tog.toggle_container}>
-                    <div>Text</div>
-                    <ToggleSlider tog={tog}/>
-                    <div>Text</div>
+                <div className={cls.price_title_container}>
+                    <div className={cls.price_title}>
+                        Try both products for free
+                    </div>
+                    <div className={tog.toggle_container}>
+                        <div>Text</div>
+                        <ToggleSlider tog={tog}/>
+                        <div>Text</div>
+                    </div>
                 </div>
                 <div className={cls.price_container_flex}>
                     <PriceBoard
