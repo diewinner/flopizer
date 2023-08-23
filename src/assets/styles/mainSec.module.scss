@@ -7,7 +7,7 @@
 
 .m_title_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: linear-gradient(89deg, #F3F3F3 0%, #F3F3F3 33.33%, #F3F3F3 75%, rgba(243, 243, 243, 0.00) 87.50%);    height: 835px * $k;
     margin: 0 auto;
