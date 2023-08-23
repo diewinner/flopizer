@@ -60,8 +60,10 @@ export const MainSec = () => {
                         </button>
                     </div>
                 </div>
-                <div className={cls.m_title_container__img}>
-                    <img src={Cube} alt={'Cube'}/>
+                <div className={cls.m_title_container__img__container}>
+                    <div className={cls.m_title_container__img__container__item}>
+                        <img src={Cube} alt={'Cube'}/>
+                    </div>
                 </div>
             </div>
 
@@ -123,10 +125,10 @@ export const MainSec = () => {
                     </button>
                     </div>
                 <div>
-                    {btn === 'item1' && <Caruselitem1 cls={cls}/>}
-                    {btn === 'item2' && <Caruselitem2 cls={cls}/>}
-                    {btn === 'item3' && <Caruselitem3 cls={cls}/>}
-                    {btn === 'item4' && <Caruselitem4 cls={cls}/>}
+                    {btn === 'item1' && <Caruselitem1 />}
+                    {btn === 'item2' && <Caruselitem2 />}
+                    {btn === 'item3' && <Caruselitem3 />}
+                    {btn === 'item4' && <Caruselitem4 />}
                 </div>
 
 
@@ -225,7 +227,7 @@ export const MainSec = () => {
                     </div>
                 </div>
             </div>
-            <CeoStatement text={ceo.text} author={ceo.author} btn={ceo.btn} cls={cls}/>
+            <CeoStatement text={ceo.text} author={ceo.author} btn={ceo.btn} />
         </div>
     )
 }

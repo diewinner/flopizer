@@ -1,8 +1,9 @@
 import React from "react";
+import cls from '../../assets/styles/mainSec.module.scss';
 
-export const CeoStatement = ({btn, author, text, cls}) => {
+export const CeoStatement = ({btn, author, text}) => {
   return (
-      <div className={cls.price_options_container}>
+      <div className={author === 'Valentin Ruzub, CEO and Founder' ? cls.price_options_container_other : cls.price_options_container}>
           <div className={cls.price_options__text}>
               <div className={cls.price_options__text__title}>
                   {text}

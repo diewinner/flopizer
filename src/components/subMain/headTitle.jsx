@@ -1,4 +1,7 @@
-export const HeadTitle = ({clsHead}) => {
+import clsHead from '../../assets/styles/components/subMain/headTitle.module.scss'
+
+
+export const HeadTitle = () => {
   return (
       <div className={clsHead.head_container}>
         <div className={clsHead.head_title}>

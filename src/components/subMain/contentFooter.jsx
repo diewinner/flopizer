@@ -1,6 +1,7 @@
 import screenVideo from '../../assets/img/screenVideo.jpg'
+import clsContFooter from '../../assets/styles/components/subMain/contentFooter.module.scss'
 
-export const ContentFooter = ({clsContFooter, title, text}) => {
+export const ContentFooter = ({ title, text}) => {
   return (
       <div className={clsContFooter.footer_container}>
               <div className={clsContFooter.demo_container}>

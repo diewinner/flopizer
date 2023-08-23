@@ -2,16 +2,13 @@ import {HeadTitle} from "../../components/subMain/headTitle";
 import {Tabs} from "../../components/subMain/Tabs";
 import {ContentTitle} from "../../components/subMain/contentTitle";
 import {ContentFooter} from "../../components/subMain/contentFooter";
-import {ContentList} from "../../components/main/contentList";
+import {ContentList} from "../../components/subMain/contentList";
 import screen1 from "../../assets/img/subMain_5/subMain_5_1.jpg";
 import screen2 from "../../assets/img/subMain_5/subMain_5_2.jpg";
 import screen3 from "../../assets/img/subMain_5/subMain_5_3.jpg";
 import screen4 from "../../assets/img/subMain_5/subMain_5_4.jpg";
 import cls from '../../assets/styles/subMain.module.scss'
-import clsTabs from '../../assets/styles/components/subMain/tabs.module.scss'
-import clsHead from '../../assets/styles/components/subMain/headTitle.module.scss'
-import clsContHead from '../../assets/styles/components/subMain/contentTitle.module.scss'
-import clsContFooter from '../../assets/styles/components/subMain/contentFooter.module.scss'
+
 
 export const SubMainFive = () => {
     const title = 'Discover a perspective that enhances your understanding'
@@ -41,11 +38,11 @@ export const SubMainFive = () => {
     }
     return (
         <div className={cls.submain_wrapper}>
-            <HeadTitle clsHead={clsHead}/>
+            <HeadTitle />
             <div className={cls.submain_content_container}>
-                <Tabs clsTabs={clsTabs}/>
+                <Tabs />
                 <div className={cls.submain_content}>
-                    <ContentTitle clsContHead={clsContHead} title={title} subtitle={subtitle}/>
+                    <ContentTitle  title={title} subtitle={subtitle}/>
                     <ContentList title1={list.title1}
                                  title2={list.title2}
                                  title3={list.title3}
@@ -58,9 +55,8 @@ export const SubMainFive = () => {
                                  screen1={list.screen1}
                                  screen3={list.screen3}
                                  screen4={list.screen4}
-                                 cls={cls}
                     />
-                    <ContentFooter clsContFooter={clsContFooter} title={footer.title} text={footer.text}/>
+                    <ContentFooter  title={footer.title} text={footer.text}/>
                 </div>
             </div>
         </div>

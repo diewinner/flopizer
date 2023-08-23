@@ -9,8 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #F6F6F6;
-    height: 835px * $k;
+    background: linear-gradient(89deg, #F3F3F3 0%, #F3F3F3 33.33%, #F3F3F3 75%, rgba(243, 243, 243, 0.00) 87.50%);    height: 835px * $k;
     margin: 0 auto;
     &__text {
         display: flex;
@@ -29,7 +28,7 @@
         &__subtitle {
             color: #000;
             font-size: 24px * $k;
-            line-height: 25px * $k;
+            line-height: 50px * $k;
             width: 100%;
         }
     }
@@ -37,7 +36,6 @@
         width: 100%;
         button {
             width: 344px * $k;
-            height: 60px * $k;
             background-color: #D42176;;
             color: #FFF;
             text-align: center;
@@ -50,14 +48,23 @@
         }
 
     }
-    &__img {
-        width: 815px * $k;
-        height: 902px * $k;
+
+&__img__container {
+    height: 100%;
+    &__item {
+        width: 759px * $k;
+        height: 100%;
+
+        div {
+            height: 100%;
+        }
+
         img {
             width: 100%;
             height: 100%;
         }
     }
+}
 }
 
 .postflopizer_detail_container__title {
@@ -449,6 +456,12 @@
 
 .price_options_container {
     background-color: #D42176;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price_options_container_other {
+    background-color: #FF5959;
     display: flex;
     flex-direction: column;
     align-items: center;

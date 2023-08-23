@@ -1,4 +1,5 @@
 import {NavLink} from "react-router-dom";
+import clsTabs from '../../assets/styles/components/subMain/tabs.module.scss'
 
 const tab = [
     {
@@ -38,7 +39,7 @@ const tab = [
 ]
 
 
-export const Tabs = ({ clsTabs }) => {
+export const Tabs = () => {
 
     return (
       <div className={clsTabs.tabs_container}>

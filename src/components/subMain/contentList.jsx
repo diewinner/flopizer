@@ -1,5 +1,8 @@
 
-export const ContentList = ({cls, title1,title2,title3,title4,text1,text2,text3,text4,screen1,screen2,screen3,screen4}) => {
+import cls from '../../assets/styles/subMain.module.scss'
+
+
+export const ContentList = ({ title1,title2,title3,title4,text1,text2,text3,text4,screen1,screen2,screen3,screen4 }) => {
   return (
       <div className={cls.submain_list}>
           <div className={cls.submain_list__item}>

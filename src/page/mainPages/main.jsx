@@ -13,7 +13,7 @@ export const Main = () => {
 
     const ceo = {
         text:'“By crafting an engaging and user-friendly experience, I aimed to make the journey of acquiring poker skills a genuinely enjoyable one, fostering a renewed passion for the game.”',
-        author: 'Valentin Kuzub, CEO and Founder',
+        author: 'Valentin Ruzub, CEO and Founder',
         btn: 'Pricing options'
     }
 
@@ -162,7 +162,7 @@ export const Main = () => {
                     </div>
                     <div className={tog.toggle_container}>
                         <div>Text</div>
-                        <ToggleSlider tog={tog}/>
+                        <ToggleSlider />
                         <div>Text</div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@ export const Main = () => {
             <div className={cls.info_btn_container}>
                     More packages and pricing options >>
             </div>
-            <CeoStatement author={ceo.author} btn={ceo.btn} text={ceo.text} cls={cls}/>
+            <CeoStatement author={ceo.author} btn={ceo.btn} text={ceo.text} />
         </div>
     );
 }

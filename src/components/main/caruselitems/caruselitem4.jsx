@@ -1,8 +1,9 @@
 import screenShot from "../../../assets/img/screenShotPostFlopizer.jpg";
 import React from "react";
 import {Arrow} from "../../../assets/svg/arrow";
+import cls from '../../../assets/styles/mainSec.module.scss';
 
-export const Caruselitem4 = ({cls}) => {
+export const Caruselitem4 = () => {
     return (
         <div className={cls.carusel_content}>
             <div className={cls.strategy_img}>

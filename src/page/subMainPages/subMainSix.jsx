@@ -2,14 +2,11 @@ import {HeadTitle} from "../../components/subMain/headTitle";
 import {Tabs} from "../../components/subMain/Tabs";
 import {ContentTitle} from "../../components/subMain/contentTitle";
 import {ContentFooter} from "../../components/subMain/contentFooter";
-import {ContentList} from "../../components/main/contentList";
+import {ContentList} from "../../components/subMain/contentList";
 import screen1 from "../../assets/img/subMain_6/subMain_6_1.jpg";
 import screen2 from "../../assets/img/subMain_6/subMain_6_2.jpg";
 import cls from '../../assets/styles/subMain.module.scss'
-import clsTabs from '../../assets/styles/components/subMain/tabs.module.scss'
-import clsHead from '../../assets/styles/components/subMain/headTitle.module.scss'
-import clsContHead from '../../assets/styles/components/subMain/contentTitle.module.scss'
-import clsContFooter from '../../assets/styles/components/subMain/contentFooter.module.scss'
+
 export const SubMainSix = () => {
     const title = 'Revisit your insights whenever you need'
     const subtitle = 'Preserve your hard-earned strategies, revisit them, and unveil fresh insights by comparing them with new ones.'
@@ -31,20 +28,19 @@ export const SubMainSix = () => {
     }
     return (
         <div className={cls.submain_wrapper}>
-            <HeadTitle clsHead={clsHead}/>
+            <HeadTitle />
             <div className={cls.submain_content_container}>
-                <Tabs clsTabs={clsTabs}/>
+                <Tabs />
                 <div className={cls.submain_content}>
-                    <ContentTitle clsContHead={clsContHead} title={title} subtitle={subtitle}/>
+                    <ContentTitle  title={title} subtitle={subtitle}/>
                     <ContentList title1={list.title1}
                                  title2={list.title2}
                                  text1={list.text1}
                                  text2={list.text2}
                                  screen2={list.screen2}
                                  screen1={list.screen1}
-                                 cls={cls}
                     />
-                    <ContentFooter clsContFooter={clsContFooter} title={footer.title} text={footer.text}/>
+                    <ContentFooter  title={footer.title} text={footer.text}/>
                 </div>
             </div>
         </div>
