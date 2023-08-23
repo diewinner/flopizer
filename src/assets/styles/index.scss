@@ -1,11 +1,13 @@
+/*
 @use './main.module';
-@use './mainSec.module';
-@use './subMain.module';
+*/
+/*@use './mainSec.module';*/
+/*@use './subMain.module';
 @use './components/main/toggle.module';
 @use './components/subMain/contentTitle.module';
 @use './components/subMain/contentFooter.module';
 @use './components/subMain/headTitle.module';
-@use './components/subMain/tabs.module';
+@use './components/subMain/tabs.module';*/
 
 $k:1;
 
@@ -13,4 +15,7 @@ $k:1;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  button {
+    font-family: inherit;
+  }
 }

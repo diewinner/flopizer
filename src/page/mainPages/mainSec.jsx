@@ -23,8 +23,9 @@ export const MainSec = () => {
             price:"6",
             btn:"Standard Pack",
             guest:"*with guest users",
-            timePrice:"/MONTH",
-            user:"/USER"
+            timePrice:"MONTH",
+            slash: '/',
+            user:"USER"
         }
 
     const contentFree =
@@ -100,34 +101,34 @@ export const MainSec = () => {
             </div>
 
             <div className={cls.strategy_container}>
-                <div className={cls.carusel_btns}>
                     <div className={cls.carusel_btns_wrapper}>
                     <button onClick={() => {
                         setBtn('item1');
-                    }} className={btn === 'item1' ? cls.carusel_btns_wrapper__item__active : cls.carusel_btns_wrapper__item}>Strategy
-                        Editor
+                    }} className={btn === 'item1' ? cls.carusel_btns_wrapper__item__active : cls.carusel_btns_wrapper__item}>
+                        Lorem
                     </button>
                     <button onClick={() => {
                         setBtn('item2')
-                    }} className={btn === 'item2' ? cls.carusel_btns_wrapper__item__active : cls.carusel_btns_wrapper__item}>Quick Start
-                        Mode
+                    }} className={btn === 'item2' ? cls.carusel_btns_wrapper__item__active : cls.carusel_btns_wrapper__item}>Ipsum
                     </button>
                     <button onClick={() => {
                         setBtn('item3')
-                    }} className={btn === 'item3' ? cls.carusel_btns_wrapper__item__active : cls.carusel_btns_wrapper__item}>5
-                        Analytical View Modes
+                    }} className={btn === 'item3' ? cls.carusel_btns_wrapper__item__active : cls.carusel_btns_wrapper__item}>
+                        Lorem
                     </button>
                     <button onClick={() => {
                         setBtn('item4')
-                    }} className={btn === 'item4' ? cls.carusel_btns_wrapper__item__active : cls.carusel_btns_wrapper__item}>Your
-                        History, Saved
+                    }} className={btn === 'item4' ? cls.carusel_btns_wrapper__item__active : cls.carusel_btns_wrapper__item}>
+                        Ipsum
                     </button>
                     </div>
+                <div>
+                    {btn === 'item1' && <Caruselitem1 cls={cls}/>}
+                    {btn === 'item2' && <Caruselitem2 cls={cls}/>}
+                    {btn === 'item3' && <Caruselitem3 cls={cls}/>}
+                    {btn === 'item4' && <Caruselitem4 cls={cls}/>}
                 </div>
-                <div className={btn === 'item1' ? cls.carusel_item__active : cls.carusel_item}>{btn === 'item1' && <Caruselitem1 cls={cls}/>}</div>
-                <div className={btn === 'item2' ? cls.carusel_item__active : cls.carusel_item}>{btn === 'item2' && <Caruselitem2 cls={cls}/>}</div>
-                <div className={btn === 'item3' ? cls.carusel_item__active : cls.carusel_item}>{btn === 'item3' && <Caruselitem3 cls={cls}/>}</div>
-                <div className={btn === 'item4' ? cls.carusel_item__active : cls.carusel_item}>{btn === 'item4' && <Caruselitem4 cls={cls}/>}</div>
+
 
             </div>
             <div className={cls.skills_container}>
@@ -189,31 +190,19 @@ export const MainSec = () => {
                     </div>
                     <div className={tog.toggle_container}>
                         <div>Text</div>
-                        <ToggleSlider tog={tog}/>
+                        <ToggleSlider />
                         <div>Text</div>
                     </div>
                 </div>
                 <div>
                     <div className={cls.price_container_flex}>
                         <PriceBoard
-                            cls={cls}
-                            clsBtn={cls.price_item__btn}
-                            clsBtnCont={cls.price_item__container_btn}
-                            clsLi={cls.price_item__list__item}
-                            clsBorder={cls.price_item}
-                            clsHead={cls.price_item__header}
                             title={contentFree.title}
                             li1={contentFree.li1}
                             li2={contentFree.li2}
                             price={contentFree.price}
                             btn={contentFree.btn} />
                         <PriceBoard
-                            cls={cls}
-                            clsBtn={cls.price_item__btn}
-                            clsBtnCont={cls.price_item__icm__container_btn}
-                            clsLi={cls.price_item__list__item}
-                            clsBorder={cls.price_item__icm}
-                            clsHead={cls.price_item__header}
                             title={contentPrice.title}
                             li1={contentPrice.li1}
                             li2={contentPrice.li2}
@@ -221,20 +210,16 @@ export const MainSec = () => {
                             btn={contentPrice.btn}
                             guest={contentPrice.guest}
                             timePrice={contentPrice.timePrice}
+                            slash={contentPrice.slash}
                         />
                         <PriceBoard
-                            cls={cls}
-                            clsBtn={cls.price_item__btn}
-                            clsBtnCont={cls.price_item__icm__container_btn}
-                            clsLi={cls.price_item__list__item}
-                            clsBorder={cls.price_item__icm}
-                            clsHead={cls.price_item__header}
                             title={contentPrice.title}
                             li1={contentPrice.li1}
                             li2={contentPrice.li2}
                             price={contentPrice.price}
                             btn={contentPrice.btn}
                             timePrice={contentPrice.timePrice}
+                            slash={contentPrice.slash}
                             user={contentPrice.user}
                         />
                     </div>

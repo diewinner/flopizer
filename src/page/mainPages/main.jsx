@@ -8,7 +8,6 @@ import {PriceBoard} from "../../components/main/priceBoard";
 import ToggleSlider from "../../components/main/toggle";
 import tog from '../../assets/styles/components/main/toggle.module.scss'
 import cls from '../../assets/styles/main.module.scss';
-import clsSec from '../../assets/styles/mainSec.module.scss';
 
 export const Main = () => {
 
@@ -20,7 +19,7 @@ export const Main = () => {
 
     const contentFree =
         {
-            title:"Postflopizer ",
+            title:"Postflopizer",
             li1:"Great way to explore",
             li2:"Great way to explore",
             price:"0",
@@ -169,69 +168,17 @@ export const Main = () => {
                 </div>
                 <div className={cls.price_container_flex}>
                     <PriceBoard
-                        cls={clsSec}
-                        clsBtn={clsSec.price_item__btn}
-                        clsBtnCont={clsSec.price_item__container_btn}
-                        clsLi={clsSec.price_item__list__item}
-                        clsBorder={clsSec.price_item}
-                        clsHead={clsSec.price_item__header}
                         title={contentFree.title}
                         li1={contentFree.li1}
                         li2={contentFree.li2}
                         price={contentFree.price}
                         btn={contentFree.btn} />
                     <PriceBoard
-                        cls={clsSec}
-                        clsBtn={clsSec.price_item__btn}
-                        clsBtnCont={clsSec.price_item__container_btn}
-                        clsLi={clsSec.price_item__list__item}
-                        clsBorder={clsSec.price_item}
-                        clsHead={clsSec.price_item__header}
                         title={contentFreeSec.title}
                         li1={contentFreeSec.li1}
                         li2={contentFreeSec.li2}
                         price={contentFreeSec.price}
                         btn={contentFreeSec.btn} />
-{/*                    <div className={cls.price_item}>
-                       <div className={cls.price_item__header}></div>
-                        <div className={cls.price_item__title}>
-                            Postflopizer Free Trial
-                        </div>
-                            <ul className={cls.price_item__list}>
-                                <li className={cls.price_item__list__item}>Great way to explore the features</li>
-                                <li className={cls.price_item__list__item}>All tools except flop editing</li>
-                                <li className={cls.price_item__list__item}>Early bird price for the full version</li>
-                                <li className={cls.price_item__list__item}>One-time purchase model</li>
-                            </ul>
-                        <div className={cls.price_item__price}>
-                            $0
-                        </div>
-                        <div className={cls.price_item__container_btn}>
-                            <button className={cls.price_item__btn} >
-                                Get your Demo
-                            </button>
-                        </div>
-                    </div>
-                    <div className={cls.price_item__icm}>
-                        <div className={cls.price_item__icm__header}></div>
-                        <div className={cls.price_item__icm__title}>
-                            Icmizer Free Trial
-                        </div>
-                        <ul className={cls.price_item__icm__list}>
-                            <li className={cls.price_item__icm__list__item}>Free 7-day trial</li>
-                            <li className={cls.price_item__icm__list__item}>3-in-1 package: Icmizer, MTT Coach and Replayer</li>
-                            <li className={cls.price_item__icm__list__item}>Free 7-day trial</li>
-                            <li className={cls.price_item__icm__list__item}>Subscription model</li>
-                        </ul>
-                        <div className={cls.price_item__icm__price}>
-                            $0
-                        </div>
-                        <div className={cls.price_item__icm__container_btn}>
-                            <button className={cls.price_item__icm__btn} >
-                                Get your Trial Version
-                            </button>
-                        </div>
-                    </div>*/}
                 </div>
             </div>
             <div className={cls.info_btn_container}>

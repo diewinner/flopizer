@@ -1,4 +1,5 @@
-$k:1;
+@import 'index';
+
 
 .main_container {
     margin: 0 auto;
@@ -381,7 +382,12 @@ $k:1;
             margin-left: 4px;
             bottom: 10px;
             text-transform: uppercase;
+            &__slash {
+                @extend .price_item__icm__price__time;
+                font-weight: 400;
+            }
         }
+
 
     }
     &__container_btn {
@@ -591,7 +597,12 @@ $k:1;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 25px * $k;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+    padding-left: 48px;
+    padding-right: 48px;
 }
 
 .carusel_btns {
@@ -621,7 +632,7 @@ $k:1;
         font-size: 2.25rem;
         font-weight: 700;
         text-align: left;
-        color: #9e9eae;;
+        color: #9e9eae;
         flex: 0 0 auto;
         transition: color 0.15s ease 0s;
 
@@ -651,38 +662,66 @@ $k:1;
 
 .carusel_content {
     display: flex;
-    gap: 50px * $k;
     justify-content: center;
+    align-items: center;
 }
 
 .strategy_text {
-    width: 614px * $k;
+    max-width: 42%;
+    &__wrapper {
+        padding-left: 38px;
+        padding-right: 26px;
+        max-width: 385px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
     &__title {
-        @extend .strategy_text;
         color: #000;
-        font-size: 45px * $k;
+        font-size: 1.5rem;
+        line-height: 2rem;
         font-weight: 700;
-        line-height: 64px * $k;
         letter-spacing: 0.9px * $k;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
     &__subtitle {
-        @extend .strategy_text;
         color: #000;
-        font-size: 30px * $k;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 64px * $k;
-        letter-spacing: 0.6px * $k;
+        line-height: 1.56;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        p {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
     }
     &__btn {
-        @extend .strategy_text;
         cursor: pointer;
         color: #D42176;
-        font-size: 30px * $k;
-        font-weight: 700;
-        line-height: 64px * $k;
-        letter-spacing: 0.6px * $k;
+        letter-spacing: 0.6px;
+        display: inline-flex;
+        max-width: 100%;
+        text-align: center;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        background-color: transparent;
+        text-decoration: none;
+        justify-content: flex-start;
+        span {
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 2.25rem;
+            transition: border-color 0.2s linear 0s;
+            border-bottom: 2px solid transparent;
+            &:hover {
+                border-bottom: 2px solid #D42176;
+            }
+        }
+
     }
     &__list {
         @extend .strategy_text;
@@ -702,8 +741,9 @@ $k:1;
 }
 
 .strategy_img {
-    width: 766px * $k;
-    height: 571px * $k;
+    max-width: 640px;
+    padding-left: 16px;
+    padding-right: 16px;
     img {
         width: 100%;
         height: 100%;

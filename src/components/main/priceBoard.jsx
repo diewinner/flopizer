@@ -1,26 +1,29 @@
 import React from "react";
 import {InfoIcon} from "../../assets/svg/infoIcon";
+import cls from '../../assets/styles/mainSec.module.scss';
 
-export const PriceBoard = ({cls,title,li1,li2,li3,price,btn, clsBtn, clsLi, clsBorder, guest,  clsBtnCont, timePrice, user}) => {
+export const PriceBoard = ({title,li1,li2,li3,price,btn, guest, timePrice, user, slash}) => {
   return (
-      <div className={clsBorder}>
+      <div className={title === 'Free' || title === 'Postflopizer' ? cls.price_item : cls.price_item__icm}>
                 <div className={cls.price_item__content__main}>
                     <h3 className={cls.price_item__title}>
                         {title}
                     </h3>
                     <ul className={cls.price_item__list}>
-                        <li className={clsLi}>{li1}</li>
-                        <li className={clsLi}>{li2}</li>
-                        <li className={clsLi}>{li3}</li>
+                        <li className={cls.price_item__list__item}>{li1}</li>
+                        <li className={cls.price_item__list__item}>{li2}</li>
+                        <li className={cls.price_item__list__item}>{li3}</li>
                     </ul>
                     <div className={cls.price_item__icm__price}>
                         $
                         <span className={cls.price_item__icm__price__sale}>{price}</span>
+                        <span className={cls.price_item__icm__price__time__slash}>{user ? slash : ''}</span>
                         <span className={cls.price_item__icm__price__time}>{user}</span>
+                        <span className={cls.price_item__icm__price__time__slash}>{slash}</span>
                         <span className={cls.price_item__icm__price__time}>{timePrice}</span>
                     </div>
-                    <a className={clsBtnCont}>
-                        <span className={clsBtn}>
+                    <a className={title ==='Free' ? cls.price_item__container_btn : cls.price_item__icm__container_btn}>
+                        <span className={cls.price_item__btn}>
                             {btn}
                         </span>
                     </a>

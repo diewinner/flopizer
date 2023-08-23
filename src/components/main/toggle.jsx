@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import tog from '../../assets/styles/components/main/toggle.module.scss'
 
 
-const ToggleSlider = ({tog}) => {
+const ToggleSlider = () => {
     const [isChecked, setIsChecked] = useState(false);
 
     const handleToggle = () => {
